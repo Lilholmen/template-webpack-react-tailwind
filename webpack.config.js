@@ -6,7 +6,8 @@ module.exports = {
   mode: "development",
   output: {
     path: path.join(__dirname, "./dist"),
-    filename: "index_bundle.js",
+    clean: true,
+    filename: "index.[contenthash].js",
   },
   target: "web",
   devServer: {
